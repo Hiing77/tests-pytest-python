@@ -1,0 +1,8 @@
+# Cache Python et Pytest
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Fichiers de configuration locale
+.env
+.vscode/
