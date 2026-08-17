@@ -27,11 +27,3 @@ def client_fidele():
 @pytest.fixture
 def produit_en_stock():
     return {"nom": "Clavier", "prix_ht": 50.0, "en_stock": True}
-
-@pytest.fixture
-def commande_standard():
-    return {"montant": 50.0, "is_vip": False}
-
-@pytest.fixture
-def commande_standard():
-    return {"montant": 50.0, "is_vip": False}
