@@ -2,7 +2,7 @@ import json
 import os
 
 dossier_script = os.path.dirname(os.path.abspath(__file__))
-chemin_json = os.path.join(dossier_script, "data_test.json")
+chemin_json = os.path.join(dossier_script, "generate_data.json")
 
 utilisateurs_test = [
     {

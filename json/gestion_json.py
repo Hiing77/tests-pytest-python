@@ -4,7 +4,7 @@ import os # 1. On importe le module pour gérer les chemins
 # 2. On récupère le dossier où se trouve le script
 dossier_script = os.path.dirname(os.path.abspath(__file__))
 # 3. On crée le chemin complet vers le fichier JSON
-chemin_json = os.path.join(dossier_script, "utilisateur_test.json")
+chemin_json = os.path.join(dossier_script, "gestion_json.json")
 
 test = {
     "id": "TC001",
