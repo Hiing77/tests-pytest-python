@@ -1,0 +1,20 @@
+[
+    {
+        "id": "TC001",
+        "nom": "Alice",
+        "email": "alice.test@example.com",
+        "actif": true
+    },
+    {
+        "id": "TC002",
+        "nom": "Bob",
+        "email": "bob.test@example.com",
+        "actif": false
+    },
+    {
+        "id": "TC003",
+        "nom": "Charlie",
+        "email": "charlie.test@example.com",
+        "actif": true
+    }
+]
