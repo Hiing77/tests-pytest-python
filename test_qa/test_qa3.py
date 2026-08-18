@@ -18,3 +18,6 @@ def test_erreur_commande_invalide():
     with pytest.raises(TypeError, match="La commande doit être un dictionnaire"):
          calculer_frais_livraison("livraison_status")
 
+def test_frais_livraison_standard(commande_livraison_standard):
+    resultat = calculer_frais_livraison(commande_livraison_standard)
+    assert resultat == pytest.approx(15.0)

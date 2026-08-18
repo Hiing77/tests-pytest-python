@@ -18,3 +18,7 @@ def test_acces_admin_autorise(profil_admin):
 def test_erreur_type_compte():
     with pytest.raises(TypeError, match="Le compte doit être un dictionnaire"):
         verifier_acces_admin("pas_un_dict")
+
+def test_acces_admin_refuse(compte_utilisateur_standard):
+    resultat = verifier_acces_admin(compte_utilisateur_standard)
+    assert resultat == "Accès refusé"

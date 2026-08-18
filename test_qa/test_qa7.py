@@ -18,3 +18,8 @@ def test_calcul_ttc_succes(produit_en_stock):
 def test_erreur_type_produit():
     with pytest.raises(TypeError, match="Le produit doit être un dictionnaire"):
         calculer_prix_ttc("produit_invalide", 0.20)
+
+
+def test_produit_hors_stock(produit_hors_stock):
+    resultat = calculer_prix_ttc(produit_hors_stock, 0.20)
+    assert resultat == 0.0

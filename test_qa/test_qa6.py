@@ -18,3 +18,7 @@ def test_erreur_type_client():
     with pytest.raises(TypeError, match ="Le client doit être un dictionnaire"):
             calculer_points_bonus("client_invalide", 2)
 
+def test_frais_livraison_standard(client_standard):
+    resultat = calculer_points_bonus(client_standard, 2)
+    assert resultat == pytest.approx(100.0 * 2)
+

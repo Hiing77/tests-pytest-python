@@ -18,3 +18,8 @@ def test_acces_vip_autorise(utilisateur_vip):
 def test_erreur_type_utilisateur():
     with pytest.raises(TypeError, match ="L'utilisateur doit être un dictionnaire"):
         verifier_acces_premium("pas_un_utilisateur")
+
+
+def test_utilisateur_standard(utilisateur_standard):
+    resultat = verifier_acces_premium(utilisateur_standard)
+    assert resultat == "Accès Standard"

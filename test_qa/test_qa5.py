@@ -23,3 +23,14 @@ def test_erreur_type_compte():
         retirer_argent(12345,100.0)
 
 
+def test_erreur_value_compte(compte_bancaire_bloque):
+    with pytest.raises(ValueError, match="La valeur est un chiffre ou nombre"):
+        retirer_argent(compte_bancaire_bloque,"OK")
+
+
+def test_compte_bloque(compte_bancaire_bloque):
+    resultat = retirer_argent(compte_bancaire_bloque, 100.0)
+    assert resultat == "Compte bloqué"
+
+
+
