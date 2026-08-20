@@ -1,0 +1,20 @@
+[
+    {
+        "id": "P001",
+        "nom": "Casque Audio",
+        "prix": 45,
+        "en_stock": true
+    },
+    {
+        "id": "P002",
+        "nom": "Clavier Gamer",
+        "prix": 80,
+        "en_stock": false
+    },
+    {
+        "id": "P003",
+        "nom": "Souris Sans Fil",
+        "prix": 25,
+        "en_stock": true
+    }
+]

@@ -1,0 +1,4 @@
+ID_Test,Module,Resultat
+TC101,Authentification,Succes
+TC102,Panier,Echec
+TC103,Paiement,Succes
