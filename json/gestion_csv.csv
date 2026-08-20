@@ -1,0 +1,4 @@
+ID_Test,Fonctionnalite,Statut_Attendu
+TC001,Connexion,Succes
+TC002,Mot de passe oublie,Succes
+TC003,Panier d'achat,Echec
