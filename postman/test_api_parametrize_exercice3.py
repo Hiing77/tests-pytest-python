@@ -8,7 +8,7 @@ import requests
 ])
 
 def test_recuperer_photo(id_photo, albumId_attendu):
-    url = "(https://jsonplaceholder.typicode.com/photos/{id_photo}"
+    url = f"https://jsonplaceholder.typicode.com/photos/{id_photo}"
     reponse = requests.get(url)
 
     assert reponse.status_code == 200
