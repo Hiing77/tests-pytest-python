@@ -10,10 +10,12 @@ def donnees_todo():
 }
 
 def test_creer_todo(donnees_todo):
-    url = f"https://jsonplaceholder.typicode.com/todos"
-    reponse = requests.post(url)
+    url = "https://jsonplaceholder.typicode.com/todos"
+    reponse = requests.post(url, json=donnees_todo)
+
+    assert reponse.status_code == 201
 
     donnees = reponse.json()
-    reponse = donnees["title"] == "Apprendre les fixtures avec pytest"
+    assert donnees["title"] == "Apprendre les fixtures avec pytest"
 
 
