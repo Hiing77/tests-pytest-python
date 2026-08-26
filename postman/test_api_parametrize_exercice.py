@@ -1,8 +1,7 @@
 import pytest
 import requests
 
-
-@pytest.mark.parametrize("id_post, userId_attendu", [
+@pytest.mark.parametrize("id_post, userId_attendu",[
     (1, 1),
     (6, 1),
     (11, 2)
