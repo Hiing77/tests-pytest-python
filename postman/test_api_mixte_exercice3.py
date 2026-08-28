@@ -18,4 +18,4 @@ def test_recuperer_post_mixte(statut_attendu, id_post, userId_attendu):
     assert reponse.status_code == statut_attendu
 
     donnees = reponse.json()
-    reponse = donnees["userId"] == userId_attendu
+    assert donnees["userId"] == userId_attendu
