@@ -12,7 +12,7 @@ def statut_attendu():
 ])
 
 def test_recuperer_todo_mixte(statut_attendu, id_todo, completed_attendu):
-    url = "https://jsonplaceholder.typicode.com/todos/{id_todo}"
+    url = f"https://jsonplaceholder.typicode.com/todos/{id_todo}"
     reponse = requests.get(url)
 
     assert reponse.status_code == statut_attendu
